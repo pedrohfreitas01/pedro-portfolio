@@ -4,14 +4,17 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 
-  height: 750px; /* 100% da altura da janela */
+  height: 750px; /* Ajuste da altura do header */
   margin: 0;
   padding: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  overflow: hidden; /* Garante que nada ultrapasse a borda */
 
   .aboutMe img {
     width: 97.273px;
@@ -20,7 +23,6 @@ header {
     border-radius: 9999px;
     border: 2px solid var(--red-color);
   }
-
 
   span {
     color: var(--red-color);
@@ -33,19 +35,26 @@ header {
 
   p {
     color: var(--base-gray-400);
-    text-align: center;
-    font: var(--text-sm);
-    line-height: 140%;
+  font: var(--text-sm);
+  line-height: 140%;
+  text-align: center;
+  margin-top: 20px;
+  word-wrap: break-word; /* Quebra palavras longas */
+  word-break: break-word; /* Quebra palavras longas */
+  overflow-wrap: break-word;
+  max-width: 90%; /* Impede que o texto ultrapasse as bordas */
+  margin: 0 auto; /* Centraliza o parágrafo */
   }
 
   .aboutMe {
     display: flex;
-    width: 680px;
     flex-direction: column;
     align-items: center;
     gap: 56px;
     text-align: center;
     margin-top: 120px;
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    max-width: 680px; /* Limita a largura do conteúdo */
   }
 
   .aboutMe .intro p {
@@ -80,7 +89,6 @@ header {
   .stacks img {
     width: 24px;
     height: 24px;
-    
   }
 
   .seta {

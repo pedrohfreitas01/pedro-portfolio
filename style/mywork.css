@@ -12,8 +12,6 @@ main {
     font: var(--title-md);
   }
 
-
-
   .introWork {
     display: flex;
     flex-direction: column;
@@ -22,15 +20,15 @@ main {
     margin: 72px 0px 96px 0px;
   }
 
-/* #container {
+  /* #container {
   display: grid;
   grid: repeat(2, 60px) / auto-flow 80px;
 } */
 
-  .projects{
+  .projects {
     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     margin-bottom: 144px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 144px;
   }
 
   .card {
@@ -46,15 +44,14 @@ main {
     border-radius: 12px;
     margin: 24px;
     align-items: start;
-    transition: .5s;
-    
-}
+    transition: 0.5s;
+  }
 
-.card:hover{
-  border: 1px solid var(--base-gray-400);
-  cursor: pointer;
-  scale: 1.04;
-}
+  .card:hover {
+    border: 1px solid var(--base-gray-400);
+    cursor: pointer;
+    scale: 1.04;
+  }
 
   .card img {
     width: 306px;
@@ -64,16 +61,13 @@ main {
     gap: 24px;
   }
 
-  .cardAbout h4{
+  .cardAbout h4 {
     font: var(--title-sm);
   }
 
-
-  .cardAbout p{
+  .cardAbout p {
     font: var(--text-sm);
-    
   }
-
-
-
 }
+
+

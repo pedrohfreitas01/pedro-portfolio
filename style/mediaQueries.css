@@ -1,0 +1,142 @@
+@media (max-width: 768px) {
+  /* General adjustments */
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+  }
+
+  /* Header */
+  header {
+    height: 760px;
+  }
+
+  .aboutMe {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Usa toda a largura disponível */
+    max-width: 600px;
+  }
+
+  .aboutMe img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 30px;
+  }
+
+  .intro {
+    margin-top: 20px;
+  }
+
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro h3 {
+    font-size: 1.1rem;
+  }
+
+  .intro p {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 90%; /* Ajusta para caber na tela */
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .intro h1,
+  .intro h3,
+  .intro p {
+    margin: 10px;
+  }
+
+  /* Stacks */
+  .stacks ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .stack {
+    margin: 5px;
+    text-align: center;
+  }
+
+  /* Seção My Work */
+  #myWork .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .projects .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .projects .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Serviços */
+  .services-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card-service {
+    text-align: center;
+    max-width: 300px;
+  }
+
+  /* Footer */
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .social .card {
+    width: 100px;
+    height: 120px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--base-gray-300);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .social .card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social .card h3 {
+    font-size: 0.9rem;
+  }
+
+  .social .card p {
+    font-size: 0.8rem;
+    color: var(--base-gray-400);
+  }
+}
