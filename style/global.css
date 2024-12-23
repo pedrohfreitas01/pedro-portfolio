@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+
+}
+
+:root {
+  --red-color: #e3646e;
+  --purple-color: #bb72e9;
+  --blue-color: #3996db;
+  --green-color: #82bc4f;
+  --yellow-color: #eabd5f;
+
+  --base-gray-100: #0d0e11;
+  --base-gray-200: #16181d;
+  --base-gray-300: #292c34;
+  --base-gray-400: #878ea1;
+  --base-gray-500: #c0c4ce;
+  --base-gray-600: #e2e4e9;
+
+  /* Fontes */
+  --font-family-main: "Asap", sans-serif;
+  --font-family-code: "Inconsolata", monospace; /* Fonte para subtítulos */
+  --font-family-alt: "Maven Pro", sans-serif; /* Fonte para textos menores */
+
+  /* Títulos */
+  --title-lg: 700 56px/120% var(--font-family-main); /* Bold, 56px, 120% */
+  --title-md: 700 24px/120% var(--font-family-main); /* Bold, 24px, 120% */
+  --title-sm: 700 16px/120% var(--font-family-main); /* Bold, 16px, 120% */
+
+  /* Subtítulos */
+  --subtitle: 400 20px/120% var(--font-family-code); /* Regular, 20px, 120% */
+
+  /* Texto */
+  --text-md: 400 16px/140% var(--font-family-alt); /* Regular, 16px, 140% */
+  --text-sm: 400 14px/140% var(--font-family-alt); /* Regular, 14px, 140% */
+}
+
+body {
+  color: var(--base-gray-600);
+  background-color: var(--base-gray-200);
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+ h3 {
+    font-family: Inconsolata;
+    color: var(--base-gray-500);
+  }
+
+h2{
+  font: var(--font-family-main);
+}
