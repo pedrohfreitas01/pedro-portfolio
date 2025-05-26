@@ -41,7 +41,7 @@ main {
     background-color: var(--base-gray-300);
     display: flex;
     width: 330px;
-    height: 320px;
+    height: 410px;
     padding: 16px;
     flex-direction: column;
     align-items: center;
@@ -61,7 +61,7 @@ main {
 
   .card img {
     width: 306px;
-    height: 156px;
+    height: 186px;
     flex-shrink: 0;
     border-radius: 8px;
     gap: 24px;
@@ -77,3 +77,36 @@ main {
 }
 
 
+
+.github-button {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color: var(--base-gray-200);
+  color: var(--base-gray-600);
+  font: var(--text-sm);
+  font-weight: 600;
+
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: var(--red-color);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.github-button svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
