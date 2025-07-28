@@ -4,7 +4,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 
-  height: 750px; /* Ajuste da altura do header */
+  height: 750px;
+  /* Ajuste da altura do header */
   margin: 0;
   padding: 0;
 
@@ -14,7 +15,8 @@ header {
   align-items: center;
   text-align: center;
 
-  overflow: hidden; /* Garante que nada ultrapasse a borda */
+  overflow: hidden;
+  /* Garante que nada ultrapasse a borda */
 
   .aboutMe img {
     width: 97.273px;
@@ -35,15 +37,19 @@ header {
 
   p {
     color: var(--base-gray-400);
-  font: var(--text-sm);
-  line-height: 140%;
-  text-align: center;
-  margin-top: 20px;
-  word-wrap: break-word; /* Quebra palavras longas */
-  word-break: break-word; /* Quebra palavras longas */
-  overflow-wrap: break-word;
-  max-width: 90%; /* Impede que o texto ultrapasse as bordas */
-  margin: 0 auto; /* Centraliza o parágrafo */
+    font: var(--text-sm);
+    line-height: 140%;
+    text-align: center;
+    margin-top: 20px;
+    word-wrap: break-word;
+    /* Quebra palavras longas */
+    word-break: break-word;
+    /* Quebra palavras longas */
+    overflow-wrap: break-word;
+    max-width: 90%;
+    /* Impede que o texto ultrapasse as bordas */
+    margin: 0 auto;
+    /* Centraliza o parágrafo */
   }
 
   .aboutMe {
@@ -53,13 +59,16 @@ header {
     gap: 56px;
     text-align: center;
     margin-top: 120px;
-    width: 100%; /* Garante que ocupe toda a largura disponível */
-    max-width: 680px; /* Limita a largura do conteúdo */
+    width: 100%;
+    /* Garante que ocupe toda a largura disponível */
+    max-width: 680px;
+    /* Limita a largura do conteúdo */
   }
 
   .aboutMe .intro p {
     margin-top: 20px;
   }
+
 
   .stacks {
     display: flex;
@@ -68,12 +77,22 @@ header {
     margin-top: 80px;
   }
 
+  .stacks-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* permite quebra de linha */
+    gap: 16px;
+    max-width: 680px;
+    justify-content: center;
+  }
+
   .stacks ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     gap: 16px;
   }
+
 
   .stacks li {
     display: flex;
@@ -91,10 +110,58 @@ header {
     height: 24px;
   }
 
+
   .seta {
     margin-top: 94px;
     margin-bottom: 57px;
     width: 32px;
     height: 32px;
   }
+
+    @media (max-width: 600px) {
+      header {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          padding-top: 40px;
+        }
+  
+      .aboutMe {
+        gap: 32px;
+        margin-top: 200px;
+        max-width: 100%;
+      }
+  
+      .aboutMe img {
+        width: 80px;
+        height: 80px;
+      }
+  
+      .intro h3 {
+        font-size: 1rem;
+      }
+  
+      .intro h1 {
+        font-size: 1.4rem;
+      }
+  
+      .intro p {
+        font-size: 0.9rem;
+        max-width: 100%;
+      }
+  
+      .stacks {
+        margin-top: 40px;
+      }
+  
+      .stacks-container {
+        justify-content: center;
+        gap: 12px;
+      }
+  
+      .stack {
+        flex: 1 1 calc(33.33% - 12px);
+        /* 3 por linha */
+        min-w
 }
